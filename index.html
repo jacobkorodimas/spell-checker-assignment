@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spell Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Title -->
+  <h1>Spell Check Assignment</h1>
+  <hr>
+
+  <!-- Select algorithm -->
+  <h2>Select a Search Algorithm</h2>
+  <p>Set the search algorithm that will be used:
+    <select id="selectAlgorithm">
+      <option value="Linear">Linear</option>
+      <option value="Binary">Binary</option>
+    </select>
+  </p>
+
+  <!-- Single word check-->
+  <h2>Single Word Spell Check</h2>
+  <p>Enter a word in the input box and then click the Search button to see if the word you
+    entered is in the dictionary file.</p>
+  <p>
+    <input id="word" type="text">
+    <button id="word-btn">Search</button>
+  </p>
+  <p id="word-result" class="results">Word Results...</p>
+  <hr>
+
+  <!-- Chapter one check -->
+  <h2>Spell Check Alice In Wonderland - Ch. 1</h2>
+  <p>Click the Ch 1 Search button to see if each word from Chapter 1 of Alice in Wonderland is in the
+    dictionary file.</p>
+  <p>
+    <button id="ch1-btn">Ch 1 Search</button>
+  </p>
+  <p id="ch1-result" class="results">Alice Ch. 1 Results...</p>
+  <hr>
+
+  <!-- Full text check -->
+  <h2>Spell Check Alice In Wonderland - Full Text</h2>
+  <p>Click the Full Search button to see if each word from Alice in Wonderland is in the dictionary
+    file.</p>
+  <p>
+    <button id="full-btn">Full Search</button>
+  </p>
+  <p id="full-result" class="results">Alice Full Text Results...</p>
+
+  <hr>
+  <p>View console for more output...</p>
+
+  <!-- Load JavaScript -->
+  <script src="js/file-loader.js"></script>
+  <script src="js/search-sort.js"></script>
+  <script src='js/main.js'></script>
+
+</body>
+
+</html>
